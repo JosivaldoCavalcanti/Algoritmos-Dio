@@ -8,7 +8,7 @@ Cada desafio foi separado em sua própria pasta, com código-fonte e instruçõe
 
 ## 📋 Desafios
 
-### 🥇 [Desafio 1 - Classificador de Nível de Herói](./desafio-1/README.md)
+### 🥇 [Desafio 1 - Classificador de Nível de Herói](./desafio-1)
 > Classifique o nível de um herói com base na quantidade de experiência (XP).
 - 🧠 Conceitos usados: 📝Variáveis,➕operadores, 🔄Laço de repetição,❔estrutura de decisão
   ## 🎯 Objetivo
@@ -28,7 +28,7 @@ Crie uma variável para armazenar o nome e a quantidade de experiência (XP) de 
 > `O Herói de nome **{nome}** está no nível de **{nivel}**`
 
 ---
-### 🥈 [Desafio 2 - Calculadora de Partidas Rankeadas](./desafio-2/README.md)
+### 🥈 [Desafio 2 - Calculadora de Partidas Rankeadas](./desafio-2)
 > Calcule o saldo de vitórias e derrotas de um jogador e classifique seu nível.
 - 🧠 Conceitos usados: 📝Variáveis,➕operadores, 🔄Laço de repetição,❔estrutura de decisão, 🔧Funções
   ## Objetivo:
