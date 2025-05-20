@@ -1,29 +1,27 @@
 //# 1️⃣ Desafio Classificador de nível de Herói
-// Herói e XP
-let heroi = "Goku";
-let xp = 10000;
+// Definição das variáveis
+let nome = "Seiya de Pégaso"; // Substitua pelo nome do herói
+let xp = 7500; // Substitua pela quantidade de XP do herói
+let nivel = "";
 
-// Faixas de XP e níveis 
-const niveis = [
-  { min: 0,     max: 1000,  nivel: "Ferro" },
-  { min: 1001,  max: 2000,  nivel: "Bronze" },
-  { min: 2001,  max: 5000,  nivel: "Prata" },
-  { min: 5001,  max: 7000,  nivel: "Ouro" },
-  { min: 7001,  max: 8000,  nivel: "Platina" },
-  { min: 8001,  max: 9000,  nivel: "Ascendente" },
-  { min: 9001,  max: 10000, nivel: "Imortal" },
-  { min: 10001, max: Infinity, nivel: "Radiante" } // Infinity para pegar qualquer valor acima
-];
-
-let nivelDoHeroi = "";
-
-// Percorre o vetor para encontrar o nível correspondente
-for (let i = 0; i < niveis.length; i++) {
-  if (xp >= niveis[i].min && xp <= niveis[i].max) {
-    nivelDoHeroi = niveis[i].nivel;
-    break; // achou o nível, pode parar o loop
-  }
+// Estrutura de decisão para classificar o nível
+if (xp < 1000) {
+    nivel = "Ferro";
+} else if (xp >= 1001 && xp <= 2000) {
+    nivel = "Bronze";
+} else if (xp >= 2001 && xp <= 5000) {
+    nivel = "Prata";
+} else if (xp >= 5001 && xp <= 7000) {
+    nivel = "Ouro";
+} else if (xp >= 7001 && xp <= 8000) {
+    nivel = "Platina";
+} else if (xp >= 8001 && xp <= 9000) {
+    nivel = "Ascendente";
+} else if (xp >= 9001 && xp <= 10000) {
+    nivel = "Imortal";
+} else {
+    nivel = "Radiante";
 }
 
-// Saída
-console.log(`O Herói de nome ${heroi} está no nível de ${nivelDoHeroi}`);
+// Exibição do resultado
+console.log(`O Herói de nome ${nome} está no nível de ${nivel}`);
